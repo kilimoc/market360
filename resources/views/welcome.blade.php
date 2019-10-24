@@ -4,9 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Mat360</title>
+        <title>Mat360-Simple,Instant,secure and conveneient Ridesharing</title>
 
         <!-- Fonts -->
+        <link rel="shortcut icon" href="{{ asset('images/mat360.ico') }}" type="image/x-icon">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <!-- Compiled and minified CSS -->
@@ -22,7 +23,7 @@
     <body class="container">
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Mat360</a>
+            <a href="#" class="brand-logo"><img src="{{ asset('images/mat360.jpg') }}" height="70"></a>
             <a href="#" data-target="mobile-v" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#"><i class="material-icons left">home</i>Home</a></li>
@@ -127,8 +128,9 @@
 
                     </div>
                     <!--Download App-->
-                    <div class="col s12 m6 l6">
-                        <h2>Download App</h2>
+                    <div class="col s12 m6 l6 right-align">
+                        <h5>The application can be downloaded from</h5>
+                        <span><img src="{{ asset('images/android.png') }}"></span>
                     </div>
                     <!---->
                 </div>
