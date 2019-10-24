@@ -129,8 +129,8 @@
                     </div>
                     <!--Download App-->
                     <div class="col s12 m6 l6 right-align">
-                        <h5>The application can be downloaded from</h5>
-                        <span><img src="{{ asset('images/android.png') }}"></span>
+                        <h5>Get the android application from</h5>
+                        <a href=""> <span><img src="{{ asset('images/android.png') }}"></span></a>
                     </div>
                     <!---->
                 </div>
