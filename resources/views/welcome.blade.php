@@ -22,16 +22,25 @@
     <body class="container">
     <nav>
         <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">Mat360</a>
+            <a href="#" class="brand-logo">Mat360</a>
+            <a href="#" data-target="mobile-v" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="sass.html"><i class="material-icons left">home</i>Home</a></li>
-                <li><a href="badges.html"><i class="material-icons left">view_module</i>Services</a></li>
-                <li><a href="collapsible.html">Partners</a></li>
-                <li><a href="collapsible.html">News</a></li>
-                <li><a href="mobile.html">Accounts</a></li>
+                <li><a href="#"><i class="material-icons left">home</i>Home</a></li>
+                <li><a href="#"><i class="material-icons left">view_module</i>Services</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Accounts</a></li>
             </ul>
         </div>
     </nav>
+
+    <ul class="sidenav" id="mobile-v">
+        <li><a href="#"><i class="material-icons left">home</i>Home</a></li>
+        <li><a href="#"><i class="material-icons left">view_module</i>Services</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Accounts</a></li>
+    </ul>
 
     <div class="conttainer-fluid">
         <div class="row">
