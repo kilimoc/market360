@@ -13,4 +13,6 @@ class PagesController extends Controller
  public function showAccountCreation(){
      return view('create-rider-account');
  }
+
+
 }
