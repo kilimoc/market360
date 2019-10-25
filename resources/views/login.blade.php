@@ -27,15 +27,15 @@
                             <form class="col s12" method="post" action="">
                                 <div class="row">
                                     <div class="input-field col s12 m12 l12">
-                                        <input id="email" type="email" class="validate" name="email" required>
-                                        <label for="email">Email</label>
+                                        <input id="phone" type="email" class="validate" name="phone" required>
+                                        <label for="phone">Phone Number</label>
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="input-field col s12 m12 l12">
                                         <input id="password" type="password" class="validate" name="password" required>
-                                        <label for="password">Password</label>
+                                        <label for="password">Pin</label>
                                     </div>
                                 </div>
                                 <div class="row">
