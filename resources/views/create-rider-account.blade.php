@@ -24,7 +24,9 @@
                         <span class="card-title center-align"><strong><img src="{{asset('images/mat360.JPG')}}" height="40"></strong></span>
                         <!--Registration Fields-->
                         <div class="row">
-                            <form class="col s12" method="post" action="">
+                            <p>@include('flash_message')</p>
+                            <form method="POST" action="{{route('showAccountCreation.submit')}}">
+                                @csrf
                                 <div class="row">
                                     <div class="input-field col s12 m6 l6">
                                         <input id="fname" type="text" class="validate" name="fname" required>
