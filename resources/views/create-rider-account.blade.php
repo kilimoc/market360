@@ -26,26 +26,40 @@
                         <div class="row">
                             <form class="col s12" method="post" action="">
                                 <div class="row">
+                                    <div class="input-field col s12 m6 l6">
+                                        <input id="fname" type="text" class="validate" name="fname" required>
+                                        <label for="fname">FIrst Name</label>
+                                    </div>
+                                    <div class="input-field col s12 m6 l6">
+                                        <input id="lname" type="text" class="validate" name="lname" required>
+                                        <label for="lname">Last Name</label>
+                                    </div>
+                                </div>
+                                <div class="row">
                                     <div class="input-field col s12 m12 l12">
-                                        <input id="email" type="email" class="validate" name="email" required>
-                                        <label for="email">Email</label>
+                                        <input id="phone" type="text" class="validate" name="phone" required>
+                                        <label for="phone">Phone Number</label>
                                     </div>
                                 </div>
 
                                 <div class="row">
-                                    <div class="input-field col s12 m12 l12">
+                                    <div class="input-field col s12 m6 l6">
                                         <input id="password" type="password" class="validate" name="password" required>
                                         <label for="password">Password</label>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col s12">
-                                        <button class="btn btn-block btn-orange-curved waves-effect waves-light" type="submit" name="action">Log In</button>
+                                    <div class="input-field col s12 m6 l6">
+                                        <input id="cpassword" type="password" class="validate" name="cpassword" required>
+                                        <label for="cpassword">Confirm Password</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col s12">
-                                        <p class="center-align">Don't have an account? <a href="{{ route('showAccountCreation') }}">Create Rider account</a></p>
+                                        <button class="btn btn-block btn-orange-curved waves-effect waves-light" type="submit" name="action">Create Account</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <p class="center-align">I already have an account? <a href="{{ route('showLogin') }}">Log In</a></p>
                                     </div>
                                 </div>
                             </form>
