@@ -27,7 +27,7 @@
                             <form class="col s12" method="post" action="">
                                 <div class="row">
                                     <div class="input-field col s12 m12 l12">
-                                        <input id="phone" type="email" class="validate" name="phone" required>
+                                        <input id="phone" type="text" class="validate" name="phone" required>
                                         <label for="phone">Phone Number</label>
                                     </div>
                                 </div>
