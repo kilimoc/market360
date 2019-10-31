@@ -30,7 +30,7 @@
                 <li><a href="#"><i class="material-icons left">view_module</i>Services</a></li>
                 <li><a href="#">Partners</a></li>
                 <li><a href="#">News</a></li>
-                <li><a href='{{ route('showLogin') }}'><i class="material-icons left">account_circle</i>Accounts</a></li>
+                <li><a href=''><i class="material-icons left">account_circle</i>Accounts</a></li>
             </ul>
         </div>
     </nav>

@@ -6,11 +6,7 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
- public function showLogin(){
-     return view('login');
- }
-
- public function showAccountCreation(){
+    public function showAccountCreation(){
      return view('create-rider-account');
  }
 

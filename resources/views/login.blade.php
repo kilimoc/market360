@@ -1,81 +1,70 @@
-<!doctype HTML>
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mat360-Simple,Instant,secure and conveneient Ridesharing</title>
-    <meta name="description" content="Ela Admin - HTML5 Admin Template">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    ``
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="{{asset('assets/css/mat360.css')}}">
-
-
-
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Mat360|Sacco Manager Registration</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}">
+  <!-- Font Awesome CSS-->
+  <link rel="stylesheet" href="{{asset('assets/vendor/font-awesome/css/font-awesome.min.css')}}">
+  <!-- Fontastic Custom icon font-->
+  <link rel="stylesheet" href="{{asset('assets/css/fontastic.css')}}">
+  <!-- Google fonts - Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <!-- jQuery Circle-->
+  <link rel="stylesheet" href="{{asset('assets/css/grasp_mobile_progress_circle-1.0.0.min.css')}}">
+  <!-- Custom Scrollbar-->
+  <link rel="stylesheet" href="{{asset('assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css')}}">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="{{asset('assets/css/style.default.css')}}" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="{{asset('assets/css/custom.css')}}">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
-<body>
-<div class="container">
-    <div class="row">
-        <div class="col s12 m6 offset-m4">
-            <div class="card horizontal">
-                <div class="card-stacked">
+  <body>
+    <div class="page login-page">
+      <div class="container">
+        <div class="form-outer text-center d-flex align-items-center">
+          <div class="form-inner">
+            <div class="logo text-uppercase"><span>SaccoManager</span><strong class="text-primary"> Login</strong></div>
 
-                    <div class="card-content">
-                        <span class="card-title center-align"><strong><img src="{{asset('images/mat360.JPG')}}" height="40"></strong></span>
-                        <!--Registration Fields-->
-                        <div class="row">
-                            <form class="col s12" method="post" action="">
-                                <div class="row">
-                                    <div class="input-field col s12 m12 l12">
-                                        <input id="phone" type="text" class="validate" name="phone" required>
-                                        <label for="phone">Phone Number</label>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="input-field col s12 m12 l12">
-                                        <input id="password" type="password" class="validate" name="password" required>
-                                        <label for="password">Pin</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col s12">
-                                        <button class="btn btn-block btn-orange-curved waves-effect waves-light" type="submit" name="action">Log In</button>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col s12">
-                                        <p class="center-align">Don't have an account? <a href="{{ route('showAccountCreation') }}">Create Rider account</a></p>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <!--End of REgistration Form-->
-                    </div>
-
-                </div>
-            </div>
+            <form method="post" class="text-left form-validate" action="{{route('saccomanagerLogin.submit')}}">
+              @csrf
+              <div class="form-group-material">
+                <input id="email" type="email" name="email" required data-msg="Please Enter Phone Number" class="input-material">
+                <label for="email" class="label-material">Email Address</label>
+              </div>
+              <div class="form-group-material">
+                <input id="password" type="password" name="password" required data-msg="Please enter your password" class="input-material">
+                <label for="password" class="label-material">Password</label>
+              </div>
+              <div class="form-group text-center">
+                <button class="btn btn-block btn-primary" type="submit">Log Me In</button>
+              </div>
+            </form><small>Do not have an account? </small><a href="register.html" class="signup">Signup</a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-
-
-
-<<!-- Compiled and minified JavaScript -->
-<script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('select');
-        var instances = M.FormSelect.init(elems, options);
-    });
-
-    // Or with jQuery
-
-    $(document).ready(function(){
-        $('select').formSelect();
-    });
-</script>
-</body>
+    <!-- JavaScript files-->
+    <script src="{{asset('assets/vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('assets/vendor/popper.js/umd/popper.min.js')}}"> </script>
+    <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('assets/js/grasp_mobile_progress_circle-1.0.0.min.js')}}"></script>
+    <script src="{{asset('assets/vendor/jquery.cookie/jquery.cookie.js')}}"> </script>
+    <script src="{{asset('assets/vendor/chart.js/Chart.min.js')}}"></script>
+    <script src="{{asset('assets/vendor/jquery-validation/jquery.validate.min.js')}}"></script>
+    <script src="{{asset('assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+    <script src="{{asset('assets/js/charts-home.js')}}"></script>
+    <!-- Main File-->
+    <script src="{{asset('assets/js/front.js')}}"></script>
+  </body>
 </html>
